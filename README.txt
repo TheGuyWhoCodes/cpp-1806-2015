@@ -15,6 +15,25 @@ SSSSSSS .   W   W    .  A       A   .     T
 ================================================
 FRC 2015 C++ Summer Reprogramming
 
+Contact:
+Vern Larson			Technology Teacher/Mentor	LarsonV@smithville.k12.mo.us
+Dillon Woollums		Alumni/Mentor				Dwooll94@gmail.com
+
+
+Useful Resources:
+	WPI 2015 Control System: https://wpilib.screenstepslive.com/s/4485
+		-Control System Setup: https://wpilib.screenstepslive.com/s/4485/m/13503
+		-C++: https://wpilib.screenstepslive.com/s/4485/m/13810
+			-Includes information on setting up Eclipse as well as basics
+	C++ References:
+		- http://www.cplusplus.com/
+			-Warning, has a lot of cstdlib included, which won't work on roborio
+	Search FRC C++ on git to find examples from other teams.
+	
+
+	
+
+
 Special Thanks:
-FRC 1730 - Initial C++ Instruction, TDButton class
-FRC 16 - .gitignore
+	FRC 1730 - Initial C++ Instruction, TDButton class
+	FRC 16 - .gitignore
