@@ -1,19 +1,18 @@
 /*
- * Drive.cpp
+ * Arms.cpp
  *
  *  Created on: Jun 19, 2015
  *      Author: Dillon
  */
 
-#include <Drive.h>
-#include <TDPIDController.h>
+#include <Arms.h>
 
-Drive::Drive() {
+Arms::Arms() {
 	// TODO Auto-generated constructor stub
 
 }
 
-Drive::~Drive() {
+Arms::~Arms() {
 	// TODO Auto-generated destructor stub
 }
 

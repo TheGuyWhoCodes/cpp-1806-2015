@@ -6,6 +6,7 @@
  */
 
 #include <Lift.h>
+#include <TDPIDController.h>
 
 Lift::Lift() {
 	// TODO Auto-generated constructor stub
