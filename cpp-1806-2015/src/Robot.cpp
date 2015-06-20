@@ -1,3 +1,6 @@
+//basic C++ libs
+#include <iostream> //file io
+#include "math.h"
 //Basic Robot Functions
 #include "WPILib.h"
 //Driven's Buton Code
@@ -6,9 +9,7 @@
 #include "TDPIDController.h"
 //RobotSubsytem Classes
 #include "Drive.h"
-#include "Lift.h"
-#include "Arms.h"
-#include "Stax.h" // ties Lift and Arms together
+#include "Stax.h" // ties Lift class and Arm class together
 
 class Robot: public IterativeRobot
 {

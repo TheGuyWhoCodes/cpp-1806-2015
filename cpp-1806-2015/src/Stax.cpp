@@ -6,6 +6,8 @@
  */
 
 #include <Stax.h>
+#include "Lift.h"
+#include "Arms.h"
 
 Stax::Stax() {
 	// TODO Auto-generated constructor stub

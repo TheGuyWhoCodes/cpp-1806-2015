@@ -29,11 +29,16 @@ Useful Resources:
 		- http://www.cplusplus.com/
 			-Warning, has a lot of cstdlib included, which won't work on roborio
 	Search FRC C++ on git to find examples from other teams.
-	
 
+	Example Code
+		- Bomb Squad 2015beta: https://github.com/FRCTeam16/TMW2014Beta
+			-has file IO, swerve drive, LEDs, FPGA Timer (BSTimer), Gyro, and more.
 	
+	FTP Client:
+		-FileZilla:	https://filezilla-project.org/
+			-for sending and recieving config files to/from robot
 
 
 Special Thanks:
-	FRC 1730 - Initial C++ Instruction, TDButton class
+	FRC 1730 - Initial C++ Instruction, TDButton class, TDPIDController class
 	FRC 16 - .gitignore
