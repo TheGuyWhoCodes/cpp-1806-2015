@@ -33,6 +33,9 @@ Useful Resources:
 	Example Code
 		- Bomb Squad 2015beta: https://github.com/FRCTeam16/TMW2014Beta
 			-has file IO, swerve drive, LEDs, FPGA Timer (BSTimer), Gyro, and more.
+		- Excel 2474 2015 Code: https://github.com/Excel2474/Robot2015
+			-lift code
+		-NaxX MXP: https://github.com/kauailabs/navxmxp
 	
 	FTP Client:
 		-FileZilla:	https://filezilla-project.org/
@@ -41,4 +44,4 @@ Useful Resources:
 
 Special Thanks:
 	FRC 1730 - Initial C++ Instruction, TDButton class, TDPIDController class
-	FRC 16 - .gitignore
+	FRC 16 - .gitignore, BSTimer
