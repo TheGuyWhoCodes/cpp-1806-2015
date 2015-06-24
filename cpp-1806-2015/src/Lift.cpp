@@ -22,6 +22,7 @@ Lift::Lift() {
 	photoSensor = new DigitalInput(1,2); //photo sensor for totes
 }
 
+
 Lift::~Lift() {
 
 }
