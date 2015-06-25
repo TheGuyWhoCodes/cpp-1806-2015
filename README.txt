@@ -3,7 +3,7 @@ SSSSSSS  W    W    W        A       TTTTTTTTTTTT
 S        W    W    W       A A            T
 SSSSSSS   W   W   W       AAAAA           T 
       S    W W W W       A     A          T 
-SSSSSSS .   W   W    .  A       A   .     T	  
+SSSSSSS .   W   W    .  A       A   .     T    .	  
 
       1  88888888888   0000000000   666666666666
      11  8         8   0        0   6 
@@ -35,7 +35,7 @@ Useful Resources:
 			-has file IO, swerve drive, LEDs, FPGA Timer (BSTimer), Gyro, and more.
 		- Excel 2474 2015 Code: https://github.com/Excel2474/Robot2015
 			-lift code
-		-NaxX MXP: https://github.com/kauailabs/navxmxp
+		-NavX MXP: https://github.com/kauailabs/navxmxp
 	
 	FTP Client:
 		-FileZilla:	https://filezilla-project.org/
