@@ -7,7 +7,7 @@ SSSSSSS .   W   W    .  A       A   .     T    .
 
       1  88888888888   0000000000   666666666666
      11  8         8   0        0   6 
-    111  8         8   0        0   6 
+    1 1  8         8   0        0   6 
       1  88888888888   0        0   666666666666
       1  8         8   0        0   6          6 
       1  8         8   0        0   6          6
@@ -28,6 +28,7 @@ Useful Resources:
 	C++ References:
 		- http://www.cplusplus.com/
 			-Warning, has a lot of cstdlib included, which won't work on roborio
+		- http://erlerobotics.gitbooks.io/erle-robotics-cpp-gitbook/content/index.html
 	Search FRC C++ on git to find examples from other teams.
 
 	Example Code
