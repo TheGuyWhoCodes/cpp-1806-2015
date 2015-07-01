@@ -41,7 +41,7 @@ private:
 		manualMode,
 		reset,
 		pauseFunction
-	} currentMode;	//This enum is to determine the current state of things with the robot.
+	};	//This enum is to determine the current state of things with the robot.
 	bool goingUp; //checks to see if the elevator is going up
 	int intakeSpeed;
 

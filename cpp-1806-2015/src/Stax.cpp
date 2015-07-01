@@ -12,15 +12,20 @@
 
 Stax::Stax() {
 	// TODO Auto-generated constructor stub
+	mode currentMode = 0;
+	bool Stax::goingUp = false;
+	int Stax::intakeSpeed = 0;
 
 }
 
 Stax::~Stax() {
 	// TODO Auto-generated destructor stub
 }
-
+bool isRested(){
+	return true;
+}
 void goTo(double encValue, bool Slow){
-	while (!isRested()){
+	while (isRested()){
 		/*
 		 * insert the PID code here for the elevator. I know, right.
 		 * This sounds like a lot
@@ -33,15 +38,7 @@ void goTo(double encValue, bool Slow){
 	}
 }
 
-bool isRested(){
-	/*
-	 * This function checks
-	 * 1. The Velocity of the Elevator
-	 * 2. The Acceleration of the Elevator
-	 *
-	 */
-	return true;
-}
+
 
 void selectMode(){
 	/*
@@ -52,7 +49,7 @@ void selectMode(){
 }
 
 int getMode(){
-	return Stax::currentMode;
+	return 1;
 }
 
 void pickUpTote(){
@@ -72,7 +69,7 @@ void dropTotes(){
 	 */
 }
 
-void setIntakeSpeed(Talon motor, int speed){
+void setIntakeSpeed(Talon *motor, int speed){
 	if((speed>100)||(speed<100)){
 		motor->Set(speed); //Ask Dillon. This needs help
 	}
