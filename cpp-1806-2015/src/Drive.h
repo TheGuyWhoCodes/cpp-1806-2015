@@ -4,14 +4,14 @@
  *  Created on: Jun 19, 2015
  *      Author: Dillon
  */
-
 #ifndef SRC_DRIVE_H_
 #define SRC_DRIVE_H_
+#include <WPILib.h>
 
 class Drive {
 public:
 	Drive();
-	virtual ~Drive();
+	virtual ~Drive()
 	double getEncDistance(Encoder* encoder);		//reads where the encoder is rn
 	void resetEnc(Encoder* encoder);				//resets the encoder values
 	void setSpeed(Talon* motor, int speed);		//sets the speed for a motor
