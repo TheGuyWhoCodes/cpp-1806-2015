@@ -19,7 +19,7 @@ public:
 
 	virtual ~Lift();
 private:
-	Encoder* elevEnc; //elev encoder bb
+	Encoder *elevEnc; //elev encoder bb
 	DigitalInput *topLimit; //top limit switch
 	Talon *elevMotor; //THE MOTOR :))))
 	DoubleSolenoid *brake;  //BRAKE TO STOP THE LIFT
