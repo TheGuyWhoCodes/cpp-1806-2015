@@ -4,7 +4,7 @@
  *  Created on: Jun 19, 2015
  *      Author: Dillon
  */
-
+#include <WPIlib.h>
 #ifndef SRC_LIFT_H_
 #define SRC_LIFT_H_
 
@@ -19,7 +19,7 @@ public:
 
 	virtual ~Lift();
 private:
-	Encoder* elevEnc;
+	Encoder* elevEnc; //elev encoder bb
 	DigitalInput *topLimit; //top limit switch
 	Talon *elevMotor; //THE MOTOR :))))
 	DoubleSolenoid *brake;  //BRAKE TO STOP THE LIFT

@@ -5,21 +5,21 @@
  *      Author: Dillon
  */
 
-/* TODO
- * FIND OUT ALL THE PWM PORTS.
+/* to do list
+ * FIND OUT ALL THE PWM PORTS. need to write function def. stubs.
  */
-
+#include <WPIlib.h>
 #include <Lift.h>
 #include <TDPIDController.h>
-#include <WPIlib.h>
+
 Lift::Lift() {
-	// TODO Auto-generated constructor stub
 	elevEnc = new Encoder(1,2); //I DONT KNOW THE PORTS
-	topLimit = new DigitalInput(1,2); //top limit switch
-	elevMotor = new Talon(1,2); //elevator motor
+	topLimit = new DigitalInput(1,1); //top limit switch
+	elevMotor = new Talon(1,1); //elevator motor
 	brake = new DoubleSolenoid(1,2); //double solennoid
-	bottomLimit = new DigitalInput(1,2); //bottom limit switch
-	photoSensor = new DigitalInput(1,2); //photo sensor for totes
+	bottomLimit = new DigitalInput(1,1); //bottom limit switch
+	int DigitalInput;
+	photoSensor = new DigitalInput(1,0); //photo sensor for totes
 }
 
 
@@ -27,3 +27,14 @@ Lift::~Lift() {
 
 }
 
+double Lift::getElevEncDist(){
+
+}
+
+bool Lift::isBrakeEngaged( ) {
+
+}
+
+double Lift::getElevMotorPower(){
+
+}
