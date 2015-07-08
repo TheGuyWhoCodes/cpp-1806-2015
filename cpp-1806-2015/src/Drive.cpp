@@ -18,6 +18,28 @@ Drive::Drive() {
 	rDrive = new Talon(1);
 	lDrive = new Talon(2);
 	gyro = new Gyro(0);
+	Joystick stick;
+	TDButton *Button1;
+	TDButton *Button2;
+	TDButton *Button3;
+	/*
+	 * Button A: 1
+	 * Button B: 2
+	 * Button X: 3
+	 * Button Y: 4
+	 * Left Bumper: 5
+	 * Right Bumper: 6
+	 * Left Trigger Range: 0-1
+	 * Right Trigger Range: 0-(-1)
+	 * Button Back 7
+	 * Button Start: 9
+	 *
+	 * Left X: 1
+	 * Left Y: 2
+	 * Right X: 4
+	 * Right Y: 5
+	 * Courtesy of: gist.github.com :D
+	 */
 }
 
 Drive::~Drive() {
@@ -33,7 +55,7 @@ void Drive::resetEnc(Encoder* encoder){
 	encoder->Reset();
 }
 
-void Drive::setSpeed(Talon* motor, float speed){
+void Drive::setSpeed(Talon* motor, int speed){
 	motor->Set(speed);
 }
 
@@ -42,10 +64,10 @@ double Drive::getSpeed(Talon* motor){
 }
 
 double Drive::getGyroAngle(){
-	return GetAngle();
+	return gyro->GetAngle();
 }
 
-void Drive::arcadeDrive(double power, double turn){
-	lDrive->Set(power + turn);
-	rDrive->Set(power - turn);
+void Drive::arcadeDrive(Joystick stick){
+	rDrive->Set(stick.GetRawAxis(2)-stick.GetRawAxis(4));
+	lDrive->Set(stick.GetRawAxis(2)+stick.GetRawAxis(4));
 }

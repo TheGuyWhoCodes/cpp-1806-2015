@@ -12,6 +12,7 @@ class Drive {
 public:
 	Drive();
 	virtual ~Drive()
+	Joystick stick;
 	double getEncDistance(Encoder* encoder);		//reads where the encoder is rn
 	void resetEnc(Encoder* encoder);				//resets the encoder values
 	void setSpeed(Talon* motor, int speed);		//sets the speed for a motor

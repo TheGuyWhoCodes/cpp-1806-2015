@@ -2,8 +2,8 @@
 #include <iostream> //file io
 #include "math.h"
 //Basic Robot Functions
-#include "WPILib.h"
-//Driven's Buton Code
+#include "wpilib.h"
+//Driven's Button Code
 #include "TDButton.h"
 //Driven's PID Controller
 #include "TDPIDController.h"
@@ -13,6 +13,7 @@
 
 class Robot: public IterativeRobot
 {
+
 private:
 	LiveWindow *lw;
 
@@ -38,7 +39,7 @@ private:
 
 	void TeleopPeriodic()
 	{
-
+		Drive::arcadeDrive(stick);
 	}
 
 	void TestPeriodic()
