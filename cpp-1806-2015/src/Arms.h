@@ -21,7 +21,7 @@ public:
 
 	bool isExtended();				//Will return true if Extend is kForward
 	//close arms
-	void closeFirstStage();
+	void close1Stage();
 
 	void closeSecondStage();
 
@@ -37,7 +37,7 @@ private:
 	//Pointers to pneumatic arms
 	DoubleSolenoid* firstStage;
 	DoubleSolenoid* secondStage;
-	DoubleSolenoid* extend;
+	DoubleSolenoid* extendStage;
 
 };
 

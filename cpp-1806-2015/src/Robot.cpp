@@ -10,6 +10,7 @@
 //RobotSubsytem Classes
 #include "Drive.h"
 #include "Stax.h" // ties Lift class and Arm class together
+#include "Arms.h"
 
 class Robot: public IterativeRobot
 {
@@ -40,6 +41,7 @@ private:
 	void TeleopPeriodic()
 	{
 		Drive::arcadeDrive(stick);
+		void Arms::close1Stage();
 	}
 
 	void TestPeriodic()
