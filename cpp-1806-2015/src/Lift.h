@@ -16,6 +16,7 @@ public:
 	double getElevMotorPower();   //What percentage of power
 	bool isElevStopped(); //Is there elevator stopped?
 	void setElevMotorPower(); //Setting the Elevator motor power. i think i set it up wrong whoops
+	void liftdrive(); //This is what actually drives the lift up and down
 
 	virtual ~Lift();
 private:
