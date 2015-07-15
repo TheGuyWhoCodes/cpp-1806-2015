@@ -6,6 +6,7 @@
  */
 #include <WPIlib.h>
 #include <Arms.h>
+#include <controller.h>
 
 Arms::Arms() {
 	// TODO Auto-generated constructor stub
@@ -45,4 +46,19 @@ bool Arms::isExtended(){
 }
 void Arms::close1Stage(){
 	printf("First Stage Closed");
+}
+void Arms::close2Stage(){
+	printf("Second Stage Closed");
+}
+void Arms::extend(){
+	printf("Extended");
+}
+void Arms::open1Stage(){
+	printf("First Stage Open");
+}
+void Arms::open2Stage(){
+	printf("Second Stage Open");
+}
+void Arms::retract(){
+	printf("Retract");
 }

@@ -23,13 +23,13 @@ public:
 	//close arms
 	void close1Stage();
 
-	void closeSecondStage();
+	void close2Stage();
 
 	void extend();					//Arms extend
 	//open arms
-	void openFirstStage();
+	void open1Stage();
 
-	void openSecondStage();
+	void open2Stage();
 
 	void retract();					//Arms retract
 
