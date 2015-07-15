@@ -12,6 +12,7 @@
 #include <WPIlib.h>
 #include <Lift.h>
 #include <TDPIDController.h>
+#include <controller.h>
 
 Lift::Lift() {
 	elevEnc = new Encoder(1,2); //I DONT KNOW THE PORTS
@@ -63,8 +64,6 @@ void Lift::Lift() { //Some test code by Gavin to get lift to move w/ controller
 	lift = new Talon(3); //Connects lift var to lift motor
 	
 	Joystick stick;//Adding in controls for the lift
-	TDButton *Button5;
-	TDButton *Button6;
 }
 
 void Lift::liftDrive() { //Where the actual moving starts

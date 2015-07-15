@@ -13,24 +13,9 @@ public:
 		TDButton *Button5; //Left Bumper
 		TDButton *Button6; //Right Bumper
 		TDButton *Button7; //Back Button
-		TDButton *Button8;
-		TDButton *Button9; //Start Button
+		TDButton *Button8;//Push in the left stick
+		TDButton *Button9; //Push in the right stick
 		/*
-		 * Button A: 1
-		 * Button B: 2
-		 * Button X: 3
-		 * Button Y: 4
-		 * Left Bumper: 5
-		 * Right Bumper: 6
-		 * Left Trigger Range: 0-1
-		 * Right Trigger Range: 0-(-1)
-		 * Button Back 7
-		 * Button Start: 9
-		 *
-		 * Left X: 1
-		 * Left Y: 2
-		 * Right X: 4
-		 * Right Y: 5
 		 * Courtesy of: gist.github.com :D
-		 */
+		*/
 };
