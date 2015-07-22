@@ -45,20 +45,26 @@ bool Arms::isExtended(){
 	}
 }
 void Arms::close1Stage(){
+	firstStage->Set(kForward)
 	printf("First Stage Closed");
 }
 void Arms::close2Stage(){
+	secondStage->Set(kForward)
 	printf("Second Stage Closed");
 }
 void Arms::extend(){
+	extendStage->Set(kForward)
 	printf("Extended");
 }
 void Arms::open1Stage(){
+	firstStage->Set(kReverse)
 	printf("First Stage Open");
 }
 void Arms::open2Stage(){
+	secondStage->Set(kReverse)
 	printf("Second Stage Open");
 }
 void Arms::retract(){
+	extendStage->Set(kReverse)
 	printf("Retract");
 }
