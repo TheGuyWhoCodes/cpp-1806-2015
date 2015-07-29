@@ -1,8 +1,7 @@
 //basic C++ libs
-#include <iostream> //file io
 #include "math.h"
 //Basic Robot Functions
-#include "wpilib.h"
+#include "WPIlib.h"
 //Driven's Button Code
 #include "TDButton.h"
 //Driven's PID Controller
@@ -11,43 +10,30 @@
 #include "Drive.h"
 #include "Stax.h" // ties Lift class and Arm class together
 #include "Arms.h"
+#include <sstream>
 
-class Robot: public IterativeRobot
+
+class Robot: public SampleRobot
 {
 
 private:
 	LiveWindow *lw;
+	void Autonomous(){
 
-	void RobotInit()
-	{
-		lw = LiveWindow::GetInstance();
-	}
-
-	void AutonomousInit()
-	{
 
 	}
 
-	void AutonomousPeriodic()
-	{
+	void OperatorControl(){
+		while (IsOperatorControl() && IsEnabled()){
+			Drive::arcadeDrive();
+		}
 
 	}
 
-	void TeleopInit()
-	{
+	void Test() {
+
 
 	}
-
-	void TeleopPeriodic()
-	{
-		Drive::arcadeDrive(stick);
-		void Arms::close1Stage();
-	}
-
-	void TestPeriodic()
-	{
-		lw->Run();
-	}
-};
+}
 
 START_ROBOT_CLASS(Robot);
